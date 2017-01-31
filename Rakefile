@@ -6,7 +6,7 @@ namespace :db do
 end
 
 namespace :devops do
-  desc "Starts the thin web server through rackup."
+  desc 'Starts the thin web server through rackup.'
   task :start_app do
     `rackup -p 2000`
   end
