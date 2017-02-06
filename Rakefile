@@ -1,7 +1,12 @@
-
 namespace :db do
   task :load_config do
-    # TODO add task to load DB
+    # TODO, add task to load DB
+  end
+end
+
+namespace :style_code do
+  task :analyze do
+    `rubocop --format html -o rubocop/rubocop.html`
   end
 end
 

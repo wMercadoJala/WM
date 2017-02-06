@@ -1,10 +1,10 @@
+require 'json'
 require 'sinatra/base'
 # noinspection RubyResolve
 require 'sinatra/reloader'
 
 class MainController < Sinatra::Base
   register Sinatra::Reloader
-
   # noinspection RailsParamDefResolve
   configure do
     set(:public_folder, 'public')
